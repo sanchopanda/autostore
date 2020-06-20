@@ -22,8 +22,5 @@ module.exports = {
       chromeFlags: ['--show-paint-rects'],
       output: 'html'
     }
-  },
-  copyDependencies: {
-    dist: path.join(src, 'local_modules')
   }
 }
