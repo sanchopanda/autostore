@@ -1,7 +1,133 @@
-{% extends "common/layout.twig" %}
+<!DOCTYPE html>
+<html>
 
-{% block page %}
-<main class="main main--main-page">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title></title>
+
+</head>
+
+<body>
+    <header class="page-header">
+  <div class="page-header__wrap">
+    <div class="page-header__top">
+      <div class="page-header__container">
+        <h1 class="visually-hidden">Интернет-магазин Автозапчастей: Главная</h1>
+        <button class="page-header__menu-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="page-header__menu-toggle-bar"></span>
+        </button>
+        <a class="logo">
+          Логотип Интернет-магазина Автозапчастей
+        </a>
+        <div class="menu">
+          <div class="menu__wrap">
+            <ul class="menu__user">
+              <li class="menu__user-item">
+                <a class="menu__user-link menu__user-link--log-in" href="#">Войти</a>
+              </li>
+              <li class="menu__user-item">
+                <a class="menu__user-link menu__user-link--sign-up" href="#">Регистрация</a>
+              </li>
+              <li class="menu__user-item">
+                <a class="menu__user-link menu__user-link--favorites" href="#">Избранное</a>
+              </li>
+            </ul>
+            <ul class="menu__main">
+              <li class="menu__main-item">
+                <a class="menu__main-link menu__main-link--shops" href="#">Магазины</a>
+              </li>
+              <li class="menu__main-item">
+                <a class="menu__main-link menu__main-link--actions" href="#">Акции</a>
+              </li>
+              <li class="menu__main-item">
+                <a class="menu__main-link menu__main-link--delivery" href="#">Доставка и оплата</a>
+              </li>
+            </ul>
+            <ul class="menu__cats">
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Каталог Запчастей</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Каталог ТО</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Шины</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Диски</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Аккумуляторы</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Автомасла</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Автолампы</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Аксессуары</a>
+              </li>
+            </ul>
+            <a class="menu__address" href="#">Санкт-Петербург, ул Большая Конюшенная, д&nbsp;19</a>
+          </div>
+        </div>
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--favorites" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--account" href="#">
+              <span class="visually-hidden">Личный кабинет</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <span class="user-nav__link-content">1</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="page-header__bottom nav">
+      <div class="nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог Запчастей</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог ТО</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">Шины</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Диски</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Аккумуляторы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Автомасла</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Автолампы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Аксессуары</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+    <main class="main main--main-page">
     <section class="notice">
         <h2 class="notice__header visually-hidden">Анонс товаров</h2>
         <div class="notice__container">
@@ -830,4 +956,108 @@
         </div>
     </section>
 </main>
-{% endblock %}
+
+    <footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <div class="page-footer__container">
+
+            <div class="page-footer__form">
+                <h2>Подпишитесь на нашу рассылку и узнавайте о акциях быстрее</h2>
+                <form action="#" method="get">
+                    <div class="page-footer__form-row">
+                        <label class="visually-hidden" for="email">Введите ваш e-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Введите ваш e-mail:" required="">
+                        <button type="submit" name="button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="page-footer__sections">
+                <div class="page-footer__info">
+                    <div class="page-footer__accordeon-container">
+                        <h2>Информация</h2>
+                        <button type="button" name="button">
+                            <span class="visually-hidden">Информация</span>
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Реквизиты</a>
+                        </li>
+                        <li>
+                            <a href="#">Магазины</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__service">
+                    <div class="page-footer__accordeon-container">
+                        <h2>Сервисный центр</h2>
+                        <button type="button" name="button">
+                            <span class="visually-hidden">
+                                Сервисный центр
+                            </span>
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Доставка и самовывоз</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Возврат-обмен</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__store">
+                    <div class="page-footer__accordeon-container">
+                        <h2>Интернет-магазин</h2>
+                        <button type="button" name="button">
+                            <span class="visually-hidden">
+                                Интернет магазин
+                            </span>
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Доставка и самовывоз</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Возврат-обмен</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">Договор оферты</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика обработки
+                                персональных данных</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="page-footer__title">Интернет-магазин автозапчастей</p>
+    </div>
+</footer></body>
+
+</html>

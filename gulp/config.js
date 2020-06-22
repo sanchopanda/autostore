@@ -6,8 +6,8 @@ const src = path.join(root, 'src')
 module.exports = {
   root,
   src,
-  buildPath: path.join(root, '/build'),
-  pug2html: {
+  buildPath: path.join(root, '/docs'),
+  twig2html: {
     beautifyHtml: false
   },
   lighthouse: {
